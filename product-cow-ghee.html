@@ -7,19 +7,45 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main">
+      <span data-lang="en">Skip to content</span>
+      <span data-lang="si">අන්තර්ගතයට යන්න</span>
+    </a>
     <header class="site-header">
       <div class="container navbar">
         <a class="brand" href="index.html">
           <img src="images/logo.png" alt=".invdB logo" />
           <span>.invdB</span>
         </a>
-        <nav class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="products.html">Products</a>
-          <a href="index.html#about">About</a>
-          <a href="index.html#contact">Contact</a>
-        </nav>
+        <div class="nav-actions">
+          <nav class="nav-links">
+            <a href="index.html">
+              <span data-lang="en">Home</span>
+              <span data-lang="si">මුල් පිටුව</span>
+            </a>
+            <a href="products.html">
+              <span data-lang="en">Products</span>
+              <span data-lang="si">නිෂ්පාදන</span>
+            </a>
+            <a href="index.html#about">
+              <span data-lang="en">About</span>
+              <span data-lang="si">අප ගැන</span>
+            </a>
+            <a href="index.html#contact">
+              <span data-lang="en">Contact</span>
+              <span data-lang="si">සම්බන්ධ වන්න</span>
+            </a>
+          </nav>
+          <div class="lang-toggle" aria-label="Language toggle">
+            <button class="lang-button" type="button" data-lang-switch="en">
+              EN
+            </button>
+            <span class="lang-separator">|</span>
+            <button class="lang-button" type="button" data-lang-switch="si">
+              සිං
+            </button>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -27,13 +53,26 @@
       <section class="hero">
         <div class="container hero-grid">
           <div>
-            <p class="eyebrow">Cow Ghee collection</p>
-            <h1>Imported Cow Ghee, available in AQ &amp; NQ.</h1>
+            <p class="eyebrow">
+              <span data-lang="en">Cow Ghee collection</span>
+              <span data-lang="si">Cow Ghee එකතුව</span>
+            </p>
+            <h1>
+              <span data-lang="en">Imported Cow Ghee, available in AQ &amp; NQ.</span>
+              <span data-lang="si">Imported Cow Ghee, AQ සහ NQ ලෙස ලබා ගත හැක.</span>
+            </h1>
             <p>
-              .invdB sources imported cow ghee, hygienically repacks it, and
-              distributes across Sri Lanka. Choose between Aromatic Premium
-              Quality (AQ) and Normal Raw Quality (NQ), each in five convenient
-              sizes.
+              <span data-lang="en">
+                .invdB sources imported cow ghee, hygienically repacks it, and
+                distributes across Sri Lanka. Choose between Aromatic Premium
+                Quality (AQ) and Normal Raw Quality (NQ), each in five convenient
+                sizes.
+              </span>
+              <span data-lang="si">
+                .invdB විසින් ආනයන කරන cow ghee තෝරාගෙන, සෞඛ්‍යමය ලෙස නැවත ඇසුරුම්
+                කර ශ්‍රී ලංකාව පුරා බෙදා හැරේ. පහසු ප්‍රමාණ පහක් සහිත Aromatic
+                Premium Quality (AQ) හෝ Normal Raw Quality (NQ) අතරින් තෝරන්න.
+              </span>
             </p>
             <div class="cta-group">
               <a
@@ -42,17 +81,33 @@
                 target="_blank"
                 rel="noreferrer"
               >
-                Order on WhatsApp
+                <span data-lang="en">Order on WhatsApp</span>
+                <span data-lang="si">WhatsApp හරහා ඇණවුම් කරන්න</span>
               </a>
-              <a class="button secondary" href="products.html">Back to products</a>
+              <a class="button secondary" href="products.html">
+                <span data-lang="en">Back to products</span>
+                <span data-lang="si">නිෂ්පාදන වෙත ආපසු</span>
+              </a>
             </div>
           </div>
           <div class="feature-card">
-            <h2>Quality promise</h2>
+            <h2>
+              <span data-lang="en">Quality promise</span>
+              <span data-lang="si">ගුණාත්මකත්ව පොරොන්දුව</span>
+            </h2>
             <ul class="feature-list">
-              <li>Imported supply, handled with care.</li>
-              <li>Two quality options to suit every kitchen.</li>
-              <li>Clean, sealed packaging for freshness.</li>
+              <li>
+                <span data-lang="en">Imported supply, handled with care.</span>
+                <span data-lang="si">ආනයන සැපයුම, සැලකිල්ලෙන් හසුරවයි.</span>
+              </li>
+              <li>
+                <span data-lang="en">Two quality options to suit every kitchen.</span>
+                <span data-lang="si">සෑම කුස්සියකටම ගැළපෙන ගුණාත්මක විකල්ප දෙකක්.</span>
+              </li>
+              <li>
+                <span data-lang="en">Clean, sealed packaging for freshness.</span>
+                <span data-lang="si">නැවුම් බවට පිරිසිදු, මුද්‍රිත ඇසුරුම්.</span>
+              </li>
             </ul>
           </div>
         </div>
@@ -61,8 +116,14 @@
       <section class="section section-muted">
         <div class="container">
           <div class="section-heading">
-            <h2>Aromatic Premium Quality (AQ)</h2>
-            <p>Richer aroma with a premium cooking experience.</p>
+            <h2>
+              <span data-lang="en">Aromatic Premium Quality (AQ)</span>
+              <span data-lang="si">Aromatic Premium Quality (AQ)</span>
+            </h2>
+            <p>
+              <span data-lang="en">Richer aroma with a premium cooking experience.</span>
+              <span data-lang="si">වැඩි සුවඳක් සහ premium පිසීමේ අත්දැකීමක්.</span>
+            </p>
           </div>
           <div class="aq-highlight">
             <div class="product-image has-image">
@@ -72,11 +133,20 @@
               />
             </div>
             <div>
-              <h3>Premium AQ assortment</h3>
+              <h3>
+                <span data-lang="en">Premium AQ assortment</span>
+                <span data-lang="si">Premium AQ එකතුව</span>
+              </h3>
               <p>
-                A visual showcase of the Aromatic Premium Quality (AQ) range,
-                highlighting the clean presentation and consistent premium
-                finish across sizes.
+                <span data-lang="en">
+                  A visual showcase of the Aromatic Premium Quality (AQ) range,
+                  highlighting the clean presentation and consistent premium
+                  finish across sizes.
+                </span>
+                <span data-lang="si">
+                  Aromatic Premium Quality (AQ) එකතුවේ දෘශ්‍ය ප්‍රදර්ශනයක්, පිරිසිදු
+                  ඉදිරිපත් කිරීම සහ සෑම ප්‍රමාණයකටම ස්ථාවර premium අවසානය පෙන්වයි.
+                </span>
               </p>
             </div>
           </div>
@@ -99,7 +169,8 @@
                 target="_blank"
                 rel="noreferrer"
               >
-                WhatsApp Order
+                <span data-lang="en">WhatsApp Order</span>
+                <span data-lang="si">WhatsApp ඇණවුම</span>
               </a>
             </div>
             <div class="product-card">
@@ -120,7 +191,8 @@
                 target="_blank"
                 rel="noreferrer"
               >
-                WhatsApp Order
+                <span data-lang="en">WhatsApp Order</span>
+                <span data-lang="si">WhatsApp ඇණවුම</span>
               </a>
             </div>
             <div class="product-card">
@@ -141,7 +213,8 @@
                 target="_blank"
                 rel="noreferrer"
               >
-                WhatsApp Order
+                <span data-lang="en">WhatsApp Order</span>
+                <span data-lang="si">WhatsApp ඇණවුම</span>
               </a>
             </div>
             <div class="product-card">
@@ -162,7 +235,8 @@
                 target="_blank"
                 rel="noreferrer"
               >
-                WhatsApp Order
+                <span data-lang="en">WhatsApp Order</span>
+                <span data-lang="si">WhatsApp ඇණවුම</span>
               </a>
             </div>
             <div class="product-card">
@@ -183,7 +257,8 @@
                 target="_blank"
                 rel="noreferrer"
               >
-                WhatsApp Order
+                <span data-lang="en">WhatsApp Order</span>
+                <span data-lang="si">WhatsApp ඇණවුම</span>
               </a>
             </div>
           </div>
@@ -193,8 +268,14 @@
       <section class="section">
         <div class="container">
           <div class="section-heading">
-            <h2>Normal Raw Quality (NQ)</h2>
-            <p>Balanced everyday cooking with trusted clarity.</p>
+            <h2>
+              <span data-lang="en">Normal Raw Quality (NQ)</span>
+              <span data-lang="si">Normal Raw Quality (NQ)</span>
+            </h2>
+            <p>
+              <span data-lang="en">Balanced everyday cooking with trusted clarity.</span>
+              <span data-lang="si">විශ්වාසනීය පැහැදිලිභාවය සමඟ සමබර දෛනික පිසීම.</span>
+            </p>
           </div>
           <div class="product-grid">
             <div class="product-card">
@@ -215,7 +296,8 @@
                 target="_blank"
                 rel="noreferrer"
               >
-                WhatsApp Order
+                <span data-lang="en">WhatsApp Order</span>
+                <span data-lang="si">WhatsApp ඇණවුම</span>
               </a>
             </div>
             <div class="product-card">
@@ -236,7 +318,8 @@
                 target="_blank"
                 rel="noreferrer"
               >
-                WhatsApp Order
+                <span data-lang="en">WhatsApp Order</span>
+                <span data-lang="si">WhatsApp ඇණවුම</span>
               </a>
             </div>
             <div class="product-card">
@@ -257,7 +340,8 @@
                 target="_blank"
                 rel="noreferrer"
               >
-                WhatsApp Order
+                <span data-lang="en">WhatsApp Order</span>
+                <span data-lang="si">WhatsApp ඇණවුම</span>
               </a>
             </div>
             <div class="product-card">
@@ -278,7 +362,8 @@
                 target="_blank"
                 rel="noreferrer"
               >
-                WhatsApp Order
+                <span data-lang="en">WhatsApp Order</span>
+                <span data-lang="si">WhatsApp ඇණවුම</span>
               </a>
             </div>
             <div class="product-card">
@@ -299,7 +384,8 @@
                 target="_blank"
                 rel="noreferrer"
               >
-                WhatsApp Order
+                <span data-lang="en">WhatsApp Order</span>
+                <span data-lang="si">WhatsApp ඇණවුම</span>
               </a>
             </div>
           </div>
@@ -309,17 +395,35 @@
       <section class="section section-muted">
         <div class="container">
           <div class="section-heading">
-            <h2>Delivery information</h2>
-            <p>Flat delivery rates for Sri Lankan districts.</p>
+            <h2>
+              <span data-lang="en">Delivery information</span>
+              <span data-lang="si">බෙදාහැරීමේ තොරතුරු</span>
+            </h2>
+            <p>
+              <span data-lang="en">Flat delivery rates for Sri Lankan districts.</span>
+              <span data-lang="si">ශ්‍රී ලංකාවේ දිස්ත්‍රික්ක සඳහා ස්ථිර බෙදාහැරීම් ගාස්තු.</span>
+            </p>
           </div>
           <div class="delivery-grid">
             <div class="delivery-card">
-              <h3>Colombo &amp; Gampaha</h3>
-              <p class="price">Delivery charge: LKR 350</p>
+              <h3>
+                <span data-lang="en">Colombo &amp; Gampaha</span>
+                <span data-lang="si">කොළඹ &amp; ගම්පහ</span>
+              </h3>
+              <p class="price">
+                <span data-lang="en">Delivery charge: LKR 350</span>
+                <span data-lang="si">බෙදාහැරීම් ගාස්තු: LKR 350</span>
+              </p>
             </div>
             <div class="delivery-card">
-              <h3>Other districts</h3>
-              <p class="price">Delivery charge: LKR 400</p>
+              <h3>
+                <span data-lang="en">Other districts</span>
+                <span data-lang="si">අනෙක් දිස්ත්‍රික්ක</span>
+              </h3>
+              <p class="price">
+                <span data-lang="en">Delivery charge: LKR 400</span>
+                <span data-lang="si">බෙදාහැරීම් ගාස්තු: LKR 400</span>
+              </p>
             </div>
           </div>
         </div>
@@ -327,7 +431,11 @@
     </main>
 
     <footer>
-      <div class="container">© 2026 .invdB. All rights reserved.</div>
+      <div class="container">
+        <span data-lang="en">© 2026 .invdB. All rights reserved.</span>
+        <span data-lang="si">© 2026 .invdB. සියලු හිමිකම් ඇවිරිණි.</span>
+      </div>
     </footer>
+    <script src="lang-toggle.js"></script>
   </body>
 </html>
