@@ -424,6 +424,14 @@ img {
   opacity: 0;
 }
 
+.hero-image {
+  height: 260px;
+}
+
+.tall-image {
+  height: 320px;
+}
+
 .product-card .button,
 .variant-card .button {
   margin-top: auto;
@@ -480,6 +488,29 @@ img {
 .aq-highlight h3 {
   font-size: 1.3rem;
   color: var(--green-dark);
+}
+
+.price-block {
+  display: grid;
+  gap: 6px;
+  margin: 8px 0 4px;
+}
+
+.price-original {
+  color: var(--text-muted);
+  text-decoration: line-through;
+  font-size: 0.95rem;
+}
+
+.price-offer {
+  color: var(--green-deep);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.price-note {
+  color: var(--text-muted);
+  font-size: 0.95rem;
 }
 
 footer {
