@@ -233,7 +233,18 @@ img {
 }
 
 .product-card,
-.variant-card,
+.variant-card {
+  border: 1px solid var(--border-soft);
+  border-radius: 18px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  height: 100%;
+}
+
 .product-summary,
 .quality-card,
 .delivery-card,
@@ -312,8 +323,7 @@ img {
   position: relative;
   border-radius: 16px;
   background: #f0f2ee;
-  min-height: 180px;
-  aspect-ratio: 4 / 3;
+  height: 220px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -348,6 +358,11 @@ img {
 
 .product-image.has-image::after {
   opacity: 0;
+}
+
+.product-card .button,
+.variant-card .button {
+  margin-top: auto;
 }
 
 .callout {
