@@ -11,6 +11,49 @@
   --surface: #ffffff;
   --surface-muted: #f7f8f4;
   --shadow: 0 18px 40px rgba(11, 61, 46, 0.08);
+  --text-on-primary: #ffffff;
+  --badge-neutral-bg: #e1efe7;
+  --product-image-bg: #f0f2ee;
+  --product-image-text: #7b7f7b;
+  --hero-accent: rgba(11, 61, 46, 0.06);
+}
+
+body.theme-ghee {
+  --green-deep: #2f5b2e;
+  --green-dark: #1d3b1e;
+  --green-soft: #eef4ea;
+  --gold: #c9a25a;
+  --gold-soft: #f6e8cc;
+  --text-primary: #2b352c;
+  --text-muted: #5b6a5f;
+  --border-soft: #e3e0d6;
+  --surface: #fbf8f1;
+  --surface-muted: #f5f0e6;
+  --shadow: 0 18px 40px rgba(47, 91, 46, 0.08);
+  --text-on-primary: #fdfaf2;
+  --badge-neutral-bg: #e4efe3;
+  --product-image-bg: #f2ede3;
+  --product-image-text: #7a766d;
+  --hero-accent: rgba(47, 91, 46, 0.08);
+}
+
+body.theme-olive {
+  --green-deep: #556b2f;
+  --green-dark: #3f4e22;
+  --green-soft: #ecf0e4;
+  --gold: #d1b36b;
+  --gold-soft: #f2e7c9;
+  --text-primary: #2b3120;
+  --text-muted: #5a6152;
+  --border-soft: #e0e4d8;
+  --surface: #ffffff;
+  --surface-muted: #f7f6ef;
+  --shadow: 0 18px 40px rgba(85, 107, 47, 0.08);
+  --text-on-primary: #ffffff;
+  --badge-neutral-bg: #e6eddc;
+  --product-image-bg: #eef0e6;
+  --product-image-text: #6f7466;
+  --hero-accent: rgba(85, 107, 47, 0.08);
 }
 
 * {
@@ -47,7 +90,7 @@ img {
   top: 8px;
   padding: 8px 16px;
   background: var(--green-deep);
-  color: #fff;
+  color: var(--text-on-primary);
   border-radius: 999px;
   z-index: 10;
 }
@@ -173,7 +216,7 @@ img {
 
 .hero {
   padding: 72px 0 60px;
-  background: linear-gradient(135deg, rgba(11, 61, 46, 0.06), transparent 65%);
+  background: linear-gradient(135deg, var(--hero-accent), transparent 65%);
 }
 
 .hero-grid {
@@ -223,7 +266,7 @@ img {
 
 .button.primary {
   background: var(--green-deep);
-  color: #fff;
+  color: var(--text-on-primary);
   border-color: var(--green-deep);
 }
 
@@ -374,7 +417,7 @@ img {
 }
 
 .badge-nq {
-  background: #e1efe7;
+  background: var(--badge-neutral-bg);
   color: var(--green-deep);
 }
 
@@ -386,7 +429,7 @@ img {
 .product-image {
   position: relative;
   border-radius: 16px;
-  background: #f0f2ee;
+  background: var(--product-image-bg);
   height: 220px;
   display: flex;
   align-items: center;
@@ -405,7 +448,7 @@ img {
   text-transform: uppercase;
   font-size: 0.7rem;
   letter-spacing: 1px;
-  color: #7b7f7b;
+  color: var(--product-image-text);
   padding: 12px;
 }
 
