@@ -1,10 +1,17 @@
 const STORAGE_KEY = "invdb-lang";
 const DEFAULT_LANG = "en";
 
-const setLanguage = (lang) => {
+const applyLanguage = (lang) => {
   const selected = lang === "si" ? "si" : "en";
   document.querySelectorAll("[data-lang]").forEach((element) => {
-    element.style.display = element.dataset.lang === selected ? "" : "none";
+    if (!element.dataset.defaultDisplay) {
+      const computedDisplay = window.getComputedStyle(element).display;
+      element.dataset.defaultDisplay =
+        computedDisplay === "none" ? "inline" : computedDisplay;
+    }
+
+    element.style.display =
+      element.dataset.lang === selected ? element.dataset.defaultDisplay : "none";
   });
 
   document.querySelectorAll("[data-lang-switch]").forEach((button) => {
@@ -14,7 +21,12 @@ const setLanguage = (lang) => {
   });
 
   document.documentElement.setAttribute("lang", selected);
+};
+
+const setLanguage = (lang) => {
+  const selected = lang === "si" ? "si" : "en";
   localStorage.setItem(STORAGE_KEY, selected);
+  applyLanguage(selected);
 };
 
 const initLanguageToggle = () => {
